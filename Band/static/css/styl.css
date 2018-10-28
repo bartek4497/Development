@@ -1,0 +1,913 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #000;
+  color: #FFF;
+  height: 46px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  z-index: 1;
+}
+
+.nav-row {
+  list-style-type: none;
+  background-color: #000;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFF;
+  height: 46px;
+  float: left;
+  margin-top: 22px;
+}
+
+.nav-row > li {
+  height: 46px;
+  width: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}      
+
+.nav-row > li:hover {
+	background-color: #CCC;
+}
+
+.nav-row > li:hover >.nav-link {
+	color: #000;
+}
+
+.nav-row > .drop-down {
+	display: block;
+  margin-left: 40px;
+  margin-top: -12px;
+}
+
+.nav-row > .drop-down:hover {
+  background-color: #CCC;
+  height: 58px;
+}
+
+.nav-row > li:hover > .drop-down-menu {
+	display: block;
+}
+
+.drop-down-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  box-shadow: 0px 4px 10px #000;
+}
+
+.drop-down-menu > li {
+	background-color: #FFF;
+	height: 40px;
+	text-transform: capitalize;
+	width: 150px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.drop-down-menu > li > .dropDown-nav-link {
+	color: #000;
+	text-decoration: none;
+	margin-left: 15px;
+  font-size: 15px;
+}
+
+.drop-down-menu > li:hover {
+  background-color: #FFF;
+}
+
+      
+.drop-down-menu > li:hover > .dropDown-nav-link {
+	color: #000;
+}
+
+.drop-down-menu > li:hover {
+  background: #CCC;
+}
+
+.fa-caret-down {
+  padding-top: 2px;
+}
+
+#search {
+  float: right;
+}
+
+.fa-search {
+  float: right;
+  margin-left: 30px;
+}
+
+.fa-search:hover {
+	color: #FFF;
+  float: right;
+  background: #F44336;
+  height: 46px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#search:hover {
+  background: #000;
+}
+
+.background {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 108px;
+  height: 30px;
+}
+
+h2 {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #FFF;
+  padding-bottom: 8px;
+}
+
+h4 {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-family: "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 46px;
+  font-size: 30px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  color: #737373;
+  font-style: italic;
+  font-size: 15px;
+  font-family: "Segoe UI";
+  position: relative;
+  top: -25px;
+  left: -7px;
+}
+
+.margin-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 15.5px;
+  font-family: "Segoe UI";
+  width: 700px;
+  margin: auto;
+}
+.avatar { 
+  height: 153px;
+  width: 153px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+.list-band {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 30px 500px 30px 400px;
+}
+
+.Band-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI";
+  padding-bottom: 37px;
+  margin-left: 90px;
+}
+
+.head-tour {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  height: 115px;
+  align-items: flex-end;
+}
+
+.subtitle-tour {
+  display: flex;
+  justify-content: center;
+  color: #989898;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  top: -7px;
+  left: -7px;
+  font-family: "Segoe UI";
+}
+
+.list-tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  font-family: "Segoe UI";
+  margin-bottom: 35px;
+  padding-top: 15px;
+  padding-left: 0;
+}
+
+.li-padding {
+  background: #FFF;
+  color: #757575;
+  width: 750px;
+  height: 38px;;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom: 1px solid #CCC;
+}
+
+.background-black {
+  background: #000;
+  height: 843px;
+}
+
+.head-h2 {
+  display: flex
+  justify-content: center;
+  color: #000;
+  letter-spacing: 4px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  padding-top: 50px;
+}
+
+.w3-badge, .w3-tag {
+  background-color: #000;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50%;
+  margin-left: 620px;
+}
+
+mark {
+  margin-left: 20px;
+  height: 23px;
+  width: 70px;
+  background: #F44336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.row-tour {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.modal {
+  display: none;
+  padding-top: 210px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.modal-content {
+  margin: auto;
+  background-color: #FFF;;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 10px 0;
+}
+
+.header-content {
+  color: #FFF;
+  background-color: #009688;;
+  height: 130px;
+}
+
+.button-x {
+  color: #FFF;
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-family: "Segoe UI";
+}
+
+.button-x:hover {
+  background-color: #CCC;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  padding: 5px 2px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  top: 0;
+  right: 0;
+  font-family: "Segoe UI";
+  cursor: pointer;
+}
+
+.fa-suitcase {
+  padding-right: 15px;
+}
+
+.wide {
+  letter-spacing: 4px;
+  font-size: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ticket {
+  display: flex;
+}
+
+.fa-shopping-cart {
+  margin-right: 5px;
+}
+
+.textbox {
+  height: 35px;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-left: 15px;
+  width: 95%;
+}
+
+.button-pay {
+  background: #009688;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 600;
+  margin: 15px 20px;
+  width: 95%;
+  height: 50px;
+  border: none;
+}
+
+.button-pay:hover {
+  background-color: #CCC;
+  color: #000;
+}
+
+.footer-tickets {
+  height: 80px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-close {
+  border: none;
+  width: 100px;
+  height: 50px;
+  background-color: #F44336;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.fa-times {
+  margin-left: 5px;
+}
+
+.img-column {
+  width: 245px;
+  height: 180px;
+}
+
+.img-column:hover {
+  opacity: 0.5;
+}
+
+.column-padding {
+  background: #FFF;
+  width: 245px;
+  margin: 0 8px;
+}
+
+.City-margin {
+  margin-left: 15px;
+  font-size: 15px;
+  font-family: "Segoe UI";
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.Data {
+  color: #737373;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-left: 15px;
+  font-size: 15px;
+  font-family: Arial;
+}
+
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background: #000;
+  margin: 20px 0 17px 15px;
+  font-size: 14.5px;
+  width: 108px;
+  height: 40px;
+}
+
+.button:hover {
+  background: #CCC;
+  color: #000;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.location-data {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 18px;
+  font-family: "Segoe UI";
+  margin-right: 150px;
+}
+
+.location-data > li {
+  margin-top: 3px;
+}
+
+.fa-map-marker {
+  margin-right: 18px;
+}
+
+.fa-envelope {
+  margin-right: 10px;
+}
+
+.fa-phone {
+  margin-right: 13px;
+}
+
+.row-form {
+  margin: 20px 0 0 0;
+}
+
+.fa-map-marker {
+  margin-right: 15px;
+}
+
+.input {
+  height: 32px;
+  padding-left: 7px;
+  font-size: 15px;
+  width: 175px;
+  opacity: 0.7;
+}
+
+.margin-20 {
+    margin-left: 20px;
+}
+
+.margin-10 {
+  margin-left: 13px;
+}
+
+.input-width {
+  height: 32px;
+  margin-left: 20px;
+  padding-left: 7px;
+  font-size: 15px;
+  margin-top: 9px;
+  width: 378px;
+  opacity: 0.7;
+}
+
+.button-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 338px;
+  width: 70px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  color: #FFF;
+}
+
+.button-send:hover {
+  background: #CCC;
+  color: #000;
+  cursor: pointer;
+}
+
+.maps-flex {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 215px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+footer > .social-media > .fa {
+  margin-left: 5px;
+}
+
+footer > .social-media > .fa:hover {
+  opacity: 0.6;
+}
+
+@media all and (min-width: 1410px) and (max-width: 1190px) {
+
+  .margin-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+  }
+
+}
+
+@media all and (min-width: 740px) and (max-width: 800px) {
+
+  .justify {
+    text-align: justify;
+    font-size: 15.5px;
+    font-family: "Segoe UI";
+    margin-right: 15px;
+  }
+
+  .avatar {
+    height: 153px;
+    width: 153px;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+
+  .list-band {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 15px;
+  }
+
+  .Band-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe UI";
+    padding-bottom: 37px;
+    margin: 0;
+  }
+
+  .head-tour {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+
+  .subtitle-tour {
+    position: relative;
+    top: -28px;
+    left: -7px;
+    font-size: 15px;
+  }
+
+  .list-tour {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 35px;
+    padding: 0;
+  }
+
+  .li-padding {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 38px;;
+    padding-left: 15px;
+  }
+
+  .w3-badge, .w3-tag {
+    padding-bottom: 2px;
+    margin-left: 490px;
+}
+
+  .modal {
+    display: none;
+    padding-top: 157px;
+  }
+
+  .modal-content {
+    width: 500px;
+    padding: 0;
+  }
+
+  .button-x {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+  }  
+
+  .button-x:hover {
+    width: 40px;
+    height: 35px;
+    padding: 0 4px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container > p:first-child {
+    position: absolute;
+    top: -110px;
+  }
+
+  .textbox {
+    width: 90%;
+  }
+
+  .position {
+    position: absolute;
+    top: -60px;
+  }
+
+  .button-pay {
+    margin: 15px 20px;
+    width: 92%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .footer-tickets {
+    height: 80px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row-tour {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .img-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .img-column:hover {
+    opacity: 0.5;
+  }
+
+  .column-padding {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #FFF;
+    width: 100%;
+  }
+
+  .City-margin {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .Data {
+    color: #737373;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: Arial;
+  }
+
+  .button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background: #000;
+    margin: 20px 0 17px 15px;
+    font-size: 14.5px;
+    width: 108px;
+    height: 40px;
+  }
+
+  .button:hover {
+    background: #CCC;
+    color: #000;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .location-data {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Segoe UI";
+    margin-right: 150px;
+  }
+
+  .location-data > li {
+    margin-top: 3px;
+  }
+
+}
+
+@media all and (min-width: 400px) and (max-width: 740px) {
+  .list-tour {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .li-padding {
+    width: 568px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 38px;;
+    padding-left: 15px;
+  }
+
+  .w3-badge, .w3-tag {
+    padding-bottom: 2px;
+    margin-left: 445px;
+  }
+
+  .row-tour {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .img-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .img-column:hover {
+    opacity: 0.5;
+  }
+
+  .column-padding {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #FFF;
+    width: 100%;
+  }
+
+  .avatar {
+    height: 153px;
+    width: 153px;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+
+  .list-band {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 15px;
+  }
+
+  .Band-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe UI";
+    padding-bottom: 37px;
+    margin: 0;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .justify {
+    margin-right: 15px;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 400px) {
+
+  .li-padding {
+    max-width: 568px;
+    min-width: 200px;
+  }
+}

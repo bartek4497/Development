@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+   var imgs = new Array( 'static/img/los.jpg', 'static/img/chicago.jpg', 'static/img/NY.jpg');
+   var pos  = 0;
+ 
+   function chImg()
+   {
+      var i = document.getElementById( 'imgField' );
+ 
+      i.src = './img/' + imgs[ pos++ ];
+ 
+      if( pos >= 5 )
+      {
+         pos = 0;
+      }
+ 
+      window.setTimeout( 'chImg()', 5000 );
+   }
+</script>
+</head>
+<body onload="chImg();">
+<img src="static/img/los.jpg" id="imgField">
+<img src="static/img/NY.jpg" id="imgField">
+<img src="static/img/chicago.jpg" id="imgField">
+</body>
+</html>

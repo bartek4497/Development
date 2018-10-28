@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Band</title>
+
+		<meta charset="UTF-8">
+
+		<meta name="keywords" content="The Band, w3, HTML5, CSS">
+		<meta name="description" content="The Band, Band, music">
+		<meta name="author" content="Kaczmarek Bartosz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="static/css/styl.css">
+		<link rel="icon" type="image/png" href="static/img/favicon.png">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>	
+		<nav>
+			<ul class="nav-row">
+		        <li>
+		        	<a class="nav-link" href="index.html">Home</a>
+		        </li>
+		        <li>
+		        	<a class="nav-link" href="#Band">Band</a>
+		        </li>
+		        <li>
+		            <a class="nav-link" href="#Tour">Tour</a>
+		        </li>
+		        <li>
+		            <a class="nav-link" href="#Contact">Contact</a>
+		        </li>
+		        <li class="drop-down">
+		        	<a class="nav-link" href="#">More
+		            <i class="fa fa-caret-down"></i></a>
+		        	<ul class="drop-down-menu">
+		            	<li>
+		            		<a class="dropDown-nav-link" href="#">Merchandise</a>
+		            	</li>
+		            	<li>
+		              		<a class="dropDown-nav-link" href="#">Extras</a>
+		           		</li>
+		            	<li>
+		              		<a class="dropDown-nav-link" href="#">Media</a>
+		            	</li>
+		          	</ul>
+		        </li>
+		        <li id="search">
+		        	<i class="fa fa-search"></i>
+		   		</li>
+		    </ul>
+		</nav>
+		
+			<img class="background" src="static/img/los.jpg" alt="Los Angeles">
+
+			<header>
+				<h2>Los Angeles</h2>
+
+				<h4>We had the best time playing at Venice Beach!</h4>
+			</header>
+
+		<main>
+			<section class="margin-container">
+				<a id="Band"></a>
+				<h1>The Band</h1>
+
+				<p class="subtitle">
+					We love music
+				</p>
+
+				<p class="justify">
+					We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+
+				<ul class="list-band">
+					<li class="Band-avatar">
+						Name
+						<img class ="avatar" src="static/img/avatar.jpg" alt="Avatar">
+					</li>
+					<li class="Band-avatar">
+						Name
+						<img class ="avatar" src="static/img/avatar.jpg" alt="Avatar">
+					</li>
+					<li class="Band-avatar">
+						Name
+						<img class ="avatar" src="static/img/avatar.jpg" alt="Avatar">
+					</li>	
+				</ul>
+			</section>
+
+			<section class="background-black margin-container">
+				<a id="Tour"></a>
+				<h2 class="head-tour">Tour Dates</h2>
+				<p class="subtitle-tour">
+					Remember to book your tickets!
+				</p>
+
+				<ul class="list-tour">
+					<li class="li-padding">
+						September 
+						<mark>Sold out</mark>
+					</li>
+					<li class="li-padding">
+						October
+						<mark>Sold out</mark>
+					</li>
+					<li class="li-padding">
+						November
+						<span class="w3-badge w3-right w3-margin-right">3</span>
+					</li>
+				</ul>
+
+				<div class="row-tour">
+						
+					<div class="column-padding">
+						<img class="img-column" src="static/img/York.jpg" alt="New York">
+						<p class="City-margin">New York</p>
+						<p class="Data">
+							Fri 27 Nov 2016
+						</p>
+						<p>
+							Praesent tincidunt sed tellus ut rutrum sed vitae justo
+						</p>
+						<button class="button" onclick="document.getElementById('ticketModal').style.display='block'">
+								Buy Tickets
+						</button>
+					</div>
+					<div class="column-padding">
+						<img class="img-column" src="static/img/Paris.jpg" alt="New York">
+						<p class="City-margin">Paris</p>
+						<p class="Data">
+							Sat 28 Nov 2016
+						</p>
+
+						<p>
+							Praesent tincidunt sed tellus ut rutrum sed vitae justo
+						</p>
+
+						<button class="button" onclick="document.getElementById('ticketModal').style.display='block'">
+							Buy Tickets
+						</button>
+					</div>
+
+					<div class="column-padding">
+						<img class="img-column" src="static/img/Francisco.jpg" alt="New York">
+						<p class="City-margin">San Francisco</p>
+						<p class="Data">
+							Sun 29 Nov 2016
+						</p>
+
+						<p>
+							Praesent tincidunt sed tellus ut rutrum sed vitae justo
+						</p>
+
+						<button class="button" onclick="document.getElementById('ticketModal').style.display='block'">
+							Buy Tickets
+						</button>
+					</div>
+				</div>
+
+				<div id="ticketModal" class="modal">
+					<div class="modal-content animate-top card-shadow">
+						<header class="header-content">
+							<span onclick="document.getElementById('ticketModal').style.display='none'" class="button-x">
+								x
+							</span>
+
+							<h2 class="wide">
+								<i class="fa fa-suitcase"></i>
+								Tickets
+							</h2>
+						</header>
+						<div class="container">
+							<p>
+								<i class="fa fa-shopping-cart"></i>
+								Tickets, $15 per person
+							</p>
+							<input class="textbox position" type="text" placeholder="How many?">
+							<p>
+								<i class="fa fa-user"></i>
+								Send to
+							</p>
+							<input class="textbox" type="text" placeholder="Enter email">
+
+							<button class="button-pay">Pay</button>
+						</div>
+						<footer class="footer-tickets">
+							<span onclick="document.getElementById('ticketModal').style.display='none'" class="button-close">Close 
+								<i class="fa fa-times"></i>
+							</span>
+							<p>
+								Need <a href="#Contact">help ?</a>
+							</p>
+						</footer>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<a id="Contact"></a>
+				<h2 class="head-h2">
+					Contact
+				</h2>
+
+				<p class="subtitle">
+					Fan?Drop a note!
+				</p>
+
+				<div class="contact-row">
+					<ul class="location-data">
+						<li>
+							<i class="fa fa-map-marker"></i>
+							Chicago, US
+						</li>
+						<li>
+							<i class="fa fa-phone"></i>
+							Phone: +00 151515
+						</li>
+						<li>
+							<i class="fa fa-envelope"></i>
+							Email: mail@mail.com
+						</li>		
+					</ul>
+
+					<form action="page.php" target="_blank">
+						<div class="row-form">
+							<input class="input margin-20" type="text" name="Name" placeholder="Name" maxlength="15">
+							<input class="input margin-10" type="text" name="Email" placeholder="Email">
+						</div>
+						<input class="input-width" type="text" name="Message" placeholder="Message">
+						<button class="button-send">Send</button>
+					</form>
+				</div>
+			</section>
+			<section class="maps-flex">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d313840.8947581123!2d-87.94191843180413!3d41.83948523020426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+Illinois%2C+Stany+Zjednoczone!5e0!3m2!1spl!2spl!4v1532169175259" width="1519" height="400" frameborder="0" style="border:0; opacity: 0.5;" allowfullscreen></iframe>
+			</section>
+			<footer>
+				<div class="social-media">
+					<i class="fa fa-facebook-official fa-2x"></i>
+					<i class="fa fa-instagram fa-2x"></i>
+					<i class="fa fa-snapchat fa-2x"></i>
+					<i class="fa fa-pinterest-p fa-2x"></i>
+					<i class="fa fa-twitter fa-2x"></i>
+					<i class="fa fa-linkedin fa-2x"></i>
+				</div>
+				<p>
+					Powered by 
+					<a href="https://www.w3schools.com/w3css/default.asp" target="_blank"> 
+						w3.css
+					</a>
+				</p>
+			</footer>
+		</main>
+	</body>
+</html>
